@@ -3,27 +3,6 @@ sinatra-template
 
 This is a basic template for Sinatra apps. 
 
-###Main features
-
-* All route files are automaticly loaded from app/routes/ folder
-* Routes can be defined accross multiple files (inside app/routes/) e.g. create new file (about.rb) and add methods to
-App class:
-
-    class App < Sinatra::Base
-      get "/about" do
-        'About'
-      end
-    end
-
-* All helpers files are stored inside app/helpers/. Each helper file must register itself (see. url_helpers.rb) via:
-
-    App.helpers MyHelperModule
-
-* Models can be defined inside app/models/ and they are automaticly loaded
-* Assets are defined inside app/assets and they are divided into: js, css and images
-* Views are inside app/views/
-
-
 ### Install & Run
 
 Once you have cloned the project onto your machine, run:
@@ -42,6 +21,16 @@ For production testing
 
 
 Based on https://github.com/Phrogz/riblits
+
+
+### Main features
+
+* All route files are automaticly loaded from app/routes/ folder
+* Routes can be defined accross multiple files (inside app/routes/) 
+* All helpers files are stored inside app/helpers/. Each helper file must register itself (see. url_helpers.rb)
+* Models can be defined inside app/models/ and they are automaticly loaded
+* Assets are defined inside app/assets and they are divided into: js, css and images
+* Views are inside app/views/
 
 
 ### License
