@@ -2,7 +2,11 @@ require 'sinatra/base'
 require 'sinatra/assetpack'
 
 class App < Sinatra::Base
+  # Root will be folder of app.rb  
   set :root, File.dirname(__FILE__) # You must set app root
+
+  # Views are stored in 'app/views'
+  set :views, Proc.new { File.join(root, "app/views") }
 
   # Assets configuration
   register Sinatra::AssetPack
